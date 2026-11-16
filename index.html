@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#8e1b2e"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="حاسبة التمويل">
+<meta name="description" content="حاسبة التمويل البنكي بالدينار الكويتي، بأقساط شهرية متساوية على الرصيد المتناقص.">
+<title>حاسبة التمويل البنكي</title><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="assets/icon-180.png"><link rel="icon" href="assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="./"><span class="brand-icon">▥</span><span>حاسبة التمويل<span class="brand-sub">BANK CALCULATOR</span></span></a><span class="header-note">وضوح أكثر. قرار أفضل.</span></header>
+<main>
+<section class="intro"><span class="eyebrow"><i></i> خطّط لتمويلك بثقة</span><h1>تمويلك،<br><span>بأرقام واضحة.</span></h1><p>تعرّف على قسطك الشهري وتكلفة تمويلك<br class="desktop"> بالدينار الكويتي، في لحظات.</p></section>
+<section class="calculator" aria-label="حاسبة التمويل البنكي">
+<form id="finance-form" novalidate><div class="section-heading"><span class="step">01</span><div><h2>تفاصيل التمويل</h2><p>أدخل بياناتك، ودع الأرقام تتحدث.</p></div></div>
+<label for="amount">مبلغ التمويل <span>دينار كويتي</span></label><div class="input-wrap"><input id="amount" name="amount" type="text" inputmode="decimal" value="10000" autocomplete="off" aria-describedby="error"><span>د.ك</span></div>
+<div class="field-grid"><div><label for="rate">نسبة الربح السنوية</label><div class="input-wrap"><input id="rate" name="rate" type="text" inputmode="decimal" value="6.5" autocomplete="off" aria-describedby="error"><span>%</span></div></div><div><label for="months">مدة السداد</label><div class="input-wrap"><input id="months" name="months" type="text" inputmode="numeric" value="60" autocomplete="off" aria-describedby="error"><span>شهر</span></div></div></div>
+<p class="field-note">أدخل أي عدد صحيح موجب للأشهر.</p><p id="error" class="error" role="alert"></p>
+<button type="reset"><span>↻</span> حسبة جديدة</button><div class="automatic"><span></span> تُحدّث النتائج تلقائياً عند تعديل البيانات</div>
+</form>
+<div class="results"><div class="result-top"><span class="eyebrow">نظرة على تمويلك</span><span class="live">تقديري</span></div><p class="monthly-label">القسط الشهري</p><div class="monthly"><output id="payment">—</output><span>دينار كويتي / شهر</span></div><div class="divider"></div><div class="summary-row"><span>إجمالي أرباح البنك</span><span><output id="profit">—</output> <small>د.ك</small></span></div><div class="summary-row total"><span>إجمالي مبلغ الدين</span><span><output id="total">—</output> <small>د.ك</small></span></div><div class="composition"><div id="principal-bar"></div></div><div class="legend"><span><i></i> أصل التمويل</span><span><i></i> أرباح البنك</span></div><div class="method"><span>▥</span><p>رصيد متناقص، أقساط ثابتة.<br><small>احتساب شهري على الرصيد المتبقي.</small></p></div></div>
+</section>
+<div class="footnotes"><p><span>ⓘ</span> النتائج تقديرية ولا تشمل الرسوم والتأمين. قد تختلف الأرقام النهائية وفق شروط البنك وطريقة التقريب.</p><details><summary>أضف الحاسبة إلى شاشة الآيفون الرئيسية <span>＋</span></summary><p>افتح الصفحة في Safari، اضغط زر المشاركة، ثم اختر «إضافة إلى الشاشة الرئيسية».</p></details></div>
+</main><footer><span>حاسبة التمويل البنكي</span><span>حسابات واضحة، بخطوة واحدة.</span></footer>
+<script src="calculator.js"></script><script src="app.js"></script>
+</body></html>
